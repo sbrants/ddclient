@@ -7,6 +7,4 @@ RUN apt-get install -y ddclient
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD ["ddclient.conf", "/etc/"]
-
 ENTRYPOINT ["ddclient", "-daemon=1", "-foreground"]
