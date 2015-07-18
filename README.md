@@ -1,4 +1,4 @@
 Create a Dockerfile
 
-    FROM ddclient
+    FROM sbrants/ddclient
     ADD ["ddclient.conf", "/etc/"]
